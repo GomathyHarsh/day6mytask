@@ -5,20 +5,28 @@ class Movie{
     this.studio=studio;
     this.rating=rating;
 }
-setRating(rat){
+setRating(){
          if(this.rating === null){
-    this.rating=PG;
+             this.rating=PG;
          }
-         this.rating=PG;
+            return  this.rating;
 }
 getDetails(){
     return(`The name of movie ${this.title} by ${this.studio} got rating of ${this.rating}`);
 }
+getPG()
+{
+if(this.rating ==="PG"){
+    let m=m.push(this.name);
+}
+return m[i];
+}
 }
 let movie1=new Movie("Casino Royale","Eon Productions","PG13");
 let movie2=new Movie("Spiderman","KS Productions");
-let movie3=new Movie("Avatar","Fox Productios","R");
+let movie3=new Movie("Avatar","Fox Productios","PG");
 console.log(movie2.getDetails());
+
 
 
 //Write a "person" class to hold all the details
@@ -77,3 +85,37 @@ let customer3=new Uber(120,20,25);
 console.log(customer2.getTravelDetails());
 console.log(customer3.getPrice());
 console.log(customer1.getPrice());
+
+// class Circle
+
+class Circle{
+    constructor(radius,color){
+        this.radius=radius;
+        this.color=color;
+    }
+    setRadius(rad){
+        this.radius=rad;
+    }
+    getRadius(){
+        return(`The radius of circle is ${this.radius}`);
+    }
+    setColor(col){
+         this.color=col;
+    }
+    getColor(){
+        return (`The color of circle is ${this.color}`);
+    }
+    getArea(){
+        let area=3.14*this.radius*this.rating;
+        return area;
+    }
+    getCircum(){
+        let circcum=2*3.14*this.radius;
+    }
+}
+let cir1= new Circle(10,"red");
+let cir2=new Circle(12,"blue");
+console.log(cir1.getColor());
+cir1.setColor("blue");
+cir1.setRadius(30);
+console.log(cir1.getArea());
