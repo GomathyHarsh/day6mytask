@@ -106,16 +106,19 @@ class Circle{
         return (`The color of circle is ${this.color}`);
     }
     getArea(){
-        let area=3.14*this.radius*this.rating;
+        let area=3.14 * (this.radius*this.radius);
         return area;
     }
     getCircum(){
         let circcum=2*3.14*this.radius;
+        return circcum;
     }
 }
 let cir1= new Circle(10,"red");
 let cir2=new Circle(12,"blue");
 console.log(cir1.getColor());
 cir1.setColor("blue");
+console.log(cir1.getColor());
 cir1.setRadius(30);
-console.log(cir1.getArea());
+console.log(cir2.getCircum());
+console.log(cir2.getArea());
